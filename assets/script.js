@@ -30,15 +30,15 @@ function renderStoredData() {
     var hour8 = localStorage.getItem("hour8");
     var hour9 = localStorage.getItem("hour9");
   
-    workHour1.text = hour1;
-    workHour2.textContent = hour2;
-    workHour3.textContent = hour3;
-    workHour4.textContent = hour4;
-    workHour5.textContent = hour5;
-    workHour6.textContent = hour6;
-    workHour7.textContent = hour7;
-    workHour8.textContent = hour8;
-    workHour9.textContent = hour9;
+    workHour1.placeholder = hour1;
+    workHour2.placeholder = hour2;
+    workHour3.placeholder = hour3;
+    workHour4.placeholder = hour4;
+    workHour5.placeholder = hour5;
+    workHour6.placeholder = hour6;
+    workHour7.placeholder = hour7;
+    workHour8.placeholder = hour8;
+    workHour9.placeholder = hour9;
   }
 
   // all buttons
