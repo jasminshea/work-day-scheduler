@@ -37,7 +37,7 @@ var workHour8 = document.querySelector("#hour16");
 var workHour9 = document.querySelector("#hour17");
 
 
-renderStoredData();
+renderStoredData(); 
 
 function renderStoredData() {
     var hour1 = localStorage.getItem("hour1");
