@@ -3,4 +3,124 @@ function currentDay() {
     $('#currentDay').text(today);
   }
 
-currentDay()
+currentDay();
+
+// data storage
+var workHour1 = document.querySelector("#hour-1");
+var workHour2 = document.querySelector("#hour-2");
+var workHour3 = document.querySelector("#hour-3");
+var workHour4 = document.querySelector("#hour-4");
+var workHour5 = document.querySelector("#hour-5");
+var workHour6 = document.querySelector("#hour-6");
+var workHour7 = document.querySelector("#hour-7");
+var workHour8 = document.querySelector("#hour-8");
+var workHour9 = document.querySelector("#hour-9");
+
+
+renderStoredData();
+
+function renderStoredData() {
+    var hour1 = localStorage.getItem("hour1");
+    var hour2 = localStorage.getItem("hour2");
+    var hour3 = localStorage.getItem("hour3");
+    var hour4 = localStorage.getItem("hour4");
+    var hour5 = localStorage.getItem("hour5");
+    var hour6 = localStorage.getItem("hour6");
+    var hour7 = localStorage.getItem("hour7");
+    var hour8 = localStorage.getItem("hour8");
+    var hour9 = localStorage.getItem("hour9");
+  
+    workHour1.text = hour1;
+    workHour2.textContent = hour2;
+    workHour3.textContent = hour3;
+    workHour4.textContent = hour4;
+    workHour5.textContent = hour5;
+    workHour6.textContent = hour6;
+    workHour7.textContent = hour7;
+    workHour8.textContent = hour8;
+    workHour9.textContent = hour9;
+  }
+
+  // all buttons
+  saveBtn1.addEventListener("click", function(event) {
+    event.preventDefault();
+  
+    var hour1 = workHour1.value;
+  
+      localStorage.setItem("hour1", hour1);
+      renderStoredData();
+    }
+  );
+  saveBtn2.addEventListener("click", function(event) {
+    event.preventDefault();
+  
+    var hour2 = workHour2.value;
+  
+      localStorage.setItem("hour2", hour2);
+      renderStoredData();
+    }
+  );
+  saveBtn3.addEventListener("click", function(event) {
+    event.preventDefault();
+  
+    var hour3 = workHour3.value;
+  
+      localStorage.setItem("hour3", hour3);
+      renderStoredData();
+    }
+  );
+  saveBtn4.addEventListener("click", function(event) {
+    event.preventDefault();
+  
+    var hour4 = workHour4.value;
+  
+      localStorage.setItem("hour4", hour4);
+      renderStoredData();
+    }
+  );
+  saveBtn5.addEventListener("click", function(event) {
+    event.preventDefault();
+  
+    var hour5 = workHour5.value;
+  
+      localStorage.setItem("hour5", hour5);
+      renderStoredData();
+    }
+  );
+  saveBtn6.addEventListener("click", function(event) {
+    event.preventDefault();
+  
+    var hour6 = workHour6.value;
+  
+      localStorage.setItem("hour6", hour6);
+      renderStoredData();
+    }
+  );
+  saveBtn7.addEventListener("click", function(event) {
+    event.preventDefault();
+  
+    var hour7 = workHour7.value;
+  
+      localStorage.setItem("hour7", hour7);
+      renderStoredData();
+    }
+  );
+  saveBtn8.addEventListener("click", function(event) {
+    event.preventDefault();
+  
+    var hour8 = workHour8.value;
+  
+      localStorage.setItem("hour8", hour8);
+      renderStoredData();
+    }
+  );
+  saveBtn9.addEventListener("click", function(event) {
+    event.preventDefault();
+  
+    var hour9 = workHour9.value;
+  
+      localStorage.setItem("hour9", hour9);
+      renderStoredData();
+    }
+  );
+  
