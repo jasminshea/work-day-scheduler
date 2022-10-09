@@ -8,7 +8,11 @@ currentDay();
 var currentHour = moment().hour();
 var times = $('.description')
 times.each(function(){
-    var plannerTime = parseInt($(this).prop('id'));
+    var input = $(this).prop('id')
+    var res = input.replace(/\D/g, ""); 
+
+    var plannerTime = parseInt(res);
+    console.log(plannerTime)
     if(plannerTime > currentHour){
         $(this).addClass("future");
     }else if(plannerTime < currentHour){
@@ -22,15 +26,15 @@ times.each(function(){
 
 
 // data storage
-var workHour1 = document.querySelector("#9");
-var workHour2 = document.querySelector("#10");
-var workHour3 = document.querySelector("#11");
-var workHour4 = document.querySelector("#12");
-var workHour5 = document.querySelector("#13");
-var workHour6 = document.querySelector("#14");
-var workHour7 = document.querySelector("#15");
-var workHour8 = document.querySelector("#16");
-var workHour9 = document.querySelector("#17");
+var workHour1 = document.querySelector("#hour9");
+var workHour2 = document.querySelector("#hour10");
+var workHour3 = document.querySelector("#hour11");
+var workHour4 = document.querySelector("#hour12");
+var workHour5 = document.querySelector("#hour13");
+var workHour6 = document.querySelector("#hour14");
+var workHour7 = document.querySelector("#hour15");
+var workHour8 = document.querySelector("#hour16");
+var workHour9 = document.querySelector("#hour17");
 
 
 renderStoredData();
